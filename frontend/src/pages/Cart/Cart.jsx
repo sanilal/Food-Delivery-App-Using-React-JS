@@ -25,10 +25,10 @@ const Cart = () => {
                   <div className="cart-items-title cart-items-item">
                   <img src={item.image} alt="" />
                   <p>{item.name}</p>
-                  <p>{item.price}</p>
+                  <p>Dhs. {item.price}</p>
                   <p>{cartItems[item._id]}</p>
-                  <p>{item.price*cartItems[item._id]}</p>
-                  <p className='close'>X</p>
+                  <p>Dhs. {item.price*cartItems[item._id]}</p>
+                  <p onClick={()=>removeFromCart(item._id)} className='close'>X</p>
                 </div>
                 <hr />
                 </div>
